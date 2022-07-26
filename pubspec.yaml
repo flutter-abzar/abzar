@@ -1,6 +1,6 @@
 name: abzar
 description: Personalized widgets to speed up user interface implementation and Functional extensions of text styles
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/flutter-abzar/abzar
 
 environment:
@@ -10,34 +10,40 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher: ^6.0.15
+  get: ^4.6.3
+  package_info_plus: ^1.4.2
+  share_plus: ^4.0.10
+  file_picker: ^4.6.1
+  intl: ^0.17.0
+  webviewx: ^0.2.1
+  get_storage: ^2.0.3
+  flutter_svg: ^1.1.1+1
+  persian_tools: ^1.0.1
+  group_button: ^5.0.1
+  logger: ^1.1.0
+  image_cropper: ^2.0.3
+  cached_network_image: ^3.2.1
+  video_player: ^2.4.2
+  just_audio: ^0.9.27
+  syncfusion_flutter_pdfviewer: ^20.1.55-beta
+  path_provider: ^2.0.11
+  flutter_local_notifications: ^9.7.0
+  flutter_easyloading: ^3.0.5
+  hashtagable: ^2.1.0
+  pin_code_fields: ^7.4.0
+  intl_phone_number_input: ^0.7.0+2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter packages.
 flutter:
-
-  # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
-  #
-  # For details regarding assets in packages, see
-  # https://flutter.dev/assets-and-images/#from-packages
-  #
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware
 
-  # To add custom fonts to your package, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
   # fonts:
   #   - family: Schyler
   #     fonts:
@@ -49,6 +55,3 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  #
-  # For details regarding fonts in packages, see
-  # https://flutter.dev/custom-fonts/#from-packages
