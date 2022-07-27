@@ -33,6 +33,8 @@ dependencies:
   hashtagable: ^2.1.0
   pin_code_fields: ^7.4.0
   intl_phone_number_input: ^0.7.0+2
+  collection: ^1.16.0
+  path_drawing: ^1.0.0
 
 dev_dependencies:
   flutter_test:
