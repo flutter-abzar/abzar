@@ -45,9 +45,9 @@ Widget plusMinus({
       mainAxisAlignment: mainAxisAlignment,
       mainAxisSize: mainAxisSize,
       children: <Widget>[
-        GestureDetector(onTap: increaseAmount, child: addWidget ?? Icon(Icons.add_circle, size: 30)),
+        GestureDetector(onTap: increaseAmount, child: addWidget ?? const Icon(Icons.add_circle, size: 30)),
         Text(amountString(), style: textStyle).marginSymmetric(horizontal: spaceBetween),
-        GestureDetector(onTap: decreaseAmount, child: minusWidget ?? Icon(Icons.remove_circle, size: 30)),
+        GestureDetector(onTap: decreaseAmount, child: minusWidget ?? const Icon(Icons.remove_circle, size: 30)),
       ],
     ),
   );

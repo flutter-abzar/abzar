@@ -34,7 +34,7 @@ class Badge extends StatefulWidget {
   /// * [BorderRadius]
   /// * [BadgeAnimationType]
   /// * [BorderSide]
-  Badge({
+  const Badge({
     Key? key,
     this.badgeContent,
     this.child,
@@ -213,7 +213,7 @@ class BadgeState extends State<Badge> with SingleTickerProviderStateMixin {
 
     Widget _badgeView() => AnimatedOpacity(
           opacity: widget.showBadge ? 1 : 0,
-          duration: Duration(milliseconds: 200),
+          duration: const Duration(milliseconds: 200),
           child: Material(
             shape: border,
             elevation: widget.elevation,
@@ -224,7 +224,7 @@ class BadgeState extends State<Badge> with SingleTickerProviderStateMixin {
 
     Widget _badgeViewGradient() => AnimatedOpacity(
           opacity: widget.showBadge ? 1 : 0,
-          duration: Duration(milliseconds: 200),
+          duration: const Duration(milliseconds: 200),
           child: Material(
             shape: border,
             elevation: widget.elevation,
@@ -317,7 +317,7 @@ class BadgePosition {
 
   /// Factory method that creates a new instance of this widget
   /// according to the center
-  factory BadgePosition.center() => BadgePosition(isCenter: true);
+  factory BadgePosition.center() => const BadgePosition(isCenter: true);
 
   /// Factory method that creates a new instance of this widget
   /// according to [top] and [start]
