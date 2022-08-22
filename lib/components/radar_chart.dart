@@ -68,7 +68,7 @@ class _RadarChartState extends State<RadarChart> with SingleTickerProviderStateM
   @override
   void initState() {
     super.initState();
-    animationController = AnimationController(duration: Duration(milliseconds: 1000), vsync: this);
+    animationController = AnimationController(duration: const Duration(milliseconds: 1000), vsync: this);
 
     animation = Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
       curve: Curves.fastOutSlowIn,
@@ -94,7 +94,7 @@ class _RadarChartState extends State<RadarChart> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     return CustomPaint(
-      size: Size(double.infinity, double.infinity),
+      size: const Size(double.infinity, double.infinity),
       painter: RadarChartPainter(widget.ticks, widget.features, widget.data, widget.reverseAxis, widget.ticksTextStyle, widget.featuresTextStyle, widget.outlineColor, widget.axisColor, widget.graphColors, widget.sides, this.fraction),
     );
   }
