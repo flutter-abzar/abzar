@@ -53,6 +53,7 @@ Widget column({
   final double? width,
   final double? height,
   final bool isScrollable = false,
+  final ScrollPhysics? physics,
   final VoidCallback? onTap,
   final ScrollController? scrollController,
 }) =>
@@ -64,7 +65,7 @@ Widget column({
       margin: margin,
       child: isScrollable
           ? SingleChildScrollView(
-              physics: const BouncingScrollPhysics(),
+              physics: physics ?? const BouncingScrollPhysics(),
               controller: scrollController,
               child: Column(
                 mainAxisAlignment: mainAxisAlignment,
@@ -98,6 +99,8 @@ Widget row({
   final double? width,
   final double? height,
   final bool isScrollable = false,
+  final ScrollPhysics? physics,
+  final ScrollController? scrollController,
   final VoidCallback? onTap,
 }) =>
     Container(
@@ -108,6 +111,9 @@ Widget row({
       margin: margin,
       child: isScrollable
           ? SingleChildScrollView(
+            physics: physics ?? const BouncingScrollPhysics(),
+            scrollDirection: Axis.horizontal,
+            controller: scrollController,
               child: Row(
                 mainAxisAlignment: mainAxisAlignment,
                 mainAxisSize: mainAxisSize,
