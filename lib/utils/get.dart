@@ -59,7 +59,7 @@ Future<void> push(
   final Widget _page = await Future.microtask(() => page);
   delay(
     milliSecondDelay,
-    () => Get.to(
+    () => Get.to(()=>
       _page,
       fullscreenDialog: dialog,
       popGesture: true,
