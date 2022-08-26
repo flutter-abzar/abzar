@@ -11,6 +11,7 @@ export 'extensions/widget_extension.dart';
 export 'get.dart';
 export 'launch.dart';
 export 'share.dart';
+export 'constants.dart';
 
 void delay(final int milliseconds, final VoidCallback action) async => Future<dynamic>.delayed(
       Duration(milliseconds: milliseconds),
