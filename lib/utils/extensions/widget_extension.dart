@@ -27,6 +27,9 @@ extension WidgetsExtension on Widget {
   Widget fit([final BoxFit fit = BoxFit.scaleDown]) => FittedBox(fit: fit, child: this);
   Widget expanded([final int? flex]) => Expanded(flex: flex ?? 1, child: this);
   Widget onTap(final GestureTapCallback? onPressed) => GestureDetector(onTap: onPressed, child: this);
+  Widget onTapOpaque(final GestureTapCallback? onPressed) =>
+      GestureDetector(onTap: onPressed, behavior: HitTestBehavior.opaque, child: this);
+  Widget onTapInkWell(final GestureTapCallback? onPressed) => InkWell(onTap: onPressed, child: this);
   Widget ltr() => Directionality(textDirection: ui.TextDirection.ltr, child: this);
   Widget rtl() => Directionality(textDirection: ui.TextDirection.rtl, child: this);
 }
