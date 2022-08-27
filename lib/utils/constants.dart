@@ -1,3 +1,5 @@
+import 'dart:ui' as ui;
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 extension PageStateExtension on PageState {
@@ -30,3 +32,5 @@ class UtilitiesConstants {
 }
 
 enum PageState { initial, loading, loaded, error, empty, paging }
+
+typedef UiTextDirection = ui.TextDirection;
