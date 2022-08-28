@@ -64,14 +64,14 @@ Future<T?> _show<T>(
   final Color? barrierColor,
   final Color? bottomSheetColor,
 ) {
-  if (isIos)
+  if (isIos) {
     return _showCupertinoBottomSheet(
       context,
       title,
       actions,
       cancelAction,
     );
-  else
+  } else {
     return _showMaterialBottomSheet(
       context,
       title,
@@ -80,6 +80,7 @@ Future<T?> _show<T>(
       barrierColor,
       bottomSheetColor,
     );
+  }
 }
 
 Future<T?> _showCupertinoBottomSheet<T>(

@@ -1,6 +1,6 @@
 name: abzar
 description: Personalized widgets to speed up user interface implementation and Functional extensions of text styles
-version: 1.2.4
+version: 1.2.5
 homepage: https://github.com/flutter-abzar/abzar
 
 environment:
@@ -35,6 +35,8 @@ dependencies:
   intl_phone_number_input: ^0.7.0+2
   collection: ^1.16.0
   path_drawing: ^1.0.0
+  permission_handler: ^10.0.0
+  gallery_saver: ^2.3.2
 
 dev_dependencies:
   flutter_test:

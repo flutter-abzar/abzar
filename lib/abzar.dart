@@ -27,6 +27,8 @@ export 'package:webviewx/webviewx.dart';
 export 'package:collection/collection.dart';
 export 'components/components.dart';
 export 'utils/utils.dart';
+export 'package:permission_handler/permission_handler.dart';
+export 'package:gallery_saver/gallery_saver.dart';
 
 void initUtilities() async {
   WidgetsFlutterBinding.ensureInitialized();
