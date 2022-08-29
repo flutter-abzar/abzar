@@ -10,6 +10,16 @@ void launchWhatsApp(final String number, {LaunchMode mode = LaunchMode.platformD
       mode: mode,
     );
 
+void launchTwitter(final String username, {LaunchMode mode = LaunchMode.platformDefault}) async => await launchURL(
+      "https://twitter.com/$username",
+      mode: mode,
+    );
+
+    void launchLinkedIn(final String username, {LaunchMode mode = LaunchMode.platformDefault}) async => await launchURL(
+      "https://www.linkedin.com/in/$username",
+      mode: mode,
+    );
+
 void launchTelegram(final String id, {LaunchMode mode = LaunchMode.platformDefault}) async => await launchURL(
       "https://t.me/$id",
       mode: mode,
