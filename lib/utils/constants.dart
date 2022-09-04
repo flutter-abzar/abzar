@@ -1,5 +1,4 @@
 import 'dart:ui' as ui;
-import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 extension PageStateExtension on PageState {
