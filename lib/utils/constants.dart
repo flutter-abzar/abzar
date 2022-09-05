@@ -27,7 +27,7 @@ extension RxPageStateExtension on Rx<PageState> {
 
 
 class UtilitiesConstants {
-  static String token = "";
+  static String token = "token";
 }
 
 enum PageState { initial, loading, loaded, error, empty, paging }
