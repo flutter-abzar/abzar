@@ -14,6 +14,7 @@ Widget otpTextField({
   final EdgeInsetsGeometry? fieldOuterPadding,
   final double fieldHeight = 64,
   final double fieldWidth = 60,
+  final double borderWidth = 1,
   final Color? fillColor,
   final Color? borderColor,
 }) =>
@@ -31,6 +32,7 @@ Widget otpTextField({
         borderRadius: BorderRadius.circular(borderRadius),
         fieldHeight: fieldHeight,
         fieldWidth: fieldWidth,
+        borderWidth: borderWidth ,
         activeFillColor: fillColor,
         inactiveFillColor: fillColor,
         selectedFillColor: fillColor,
