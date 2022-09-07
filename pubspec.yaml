@@ -25,7 +25,7 @@ dependencies:
   cached_network_image: ^3.2.1
   video_player: ^2.4.2
   just_audio: ^0.9.27
-  syncfusion_flutter_pdfviewer: ^20.2.48-beta
+  #syncfusion_flutter_pdfviewer: ^20.2.48-beta
   path_provider: ^2.0.11
   flutter_local_notifications: ^9.7.0
   flutter_easyloading: ^3.0.5
