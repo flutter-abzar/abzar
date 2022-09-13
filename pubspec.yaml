@@ -17,7 +17,7 @@ dependencies:
   file_picker: ^5.0.1
   intl: ^0.17.0
   get_storage: ^2.0.3
-  flutter_svg: ^1.1.1+1
+  flutter_svg: ^1.1.5
   persian_tools: ^1.0.1
   # group_button: ^5.0.1
   logger: ^1.1.0
