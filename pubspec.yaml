@@ -34,7 +34,7 @@ dependencies:
   intl_phone_number_input: ^0.7.0+2
   collection: ^1.16.0
   path_drawing: ^1.0.0
-  permission_handler: ^10.0.0
+  permission_handler: ^8.2.6
   gallery_saver: ^2.3.2
 
 dev_dependencies:
