@@ -16,6 +16,7 @@ Widget otpTextField({
   final double fieldWidth = 60,
   final double borderWidth = 1,
   final Color? fillColor,
+  final Color? cursorColor,
   final Color? borderColor,
 }) =>
     PinCodeTextField(
@@ -23,6 +24,7 @@ Widget otpTextField({
       appContext: context,
       length: length,
       autoFocus: autoFocus,
+      cursorColor: cursorColor,
       mainAxisAlignment: mainAxisAlignment,
       hintCharacter: hintCharacter,
       animationType: AnimationType.fade,
