@@ -30,6 +30,11 @@ void launchInstagram(final String username, {LaunchMode mode = LaunchMode.platfo
       mode: mode,
     );
 
+void launchYouTube(final String username, {LaunchMode mode = LaunchMode.platformDefault}) async => await launchURL(
+      "https://youtube.com/c/$username",
+      mode: mode,
+    );
+
 void call(final String phone) async => await launchURL("tel:$phone");
 
 void sms(final String phone) async => await launchURL("sms:$phone");
