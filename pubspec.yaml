@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  # url_launcher: ^6.0.15
+  url_launcher: ^6.0.15
   get: ^4.6.3
   package_info_plus: ^1.4.2
   share_plus: ^4.0.10
