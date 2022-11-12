@@ -30,10 +30,10 @@ void launchInstagram(final String username, {LaunchMode mode = LaunchMode.extern
       mode: mode,
     );
 
-// void launchYouTube(final String username, {LaunchMode mode = LaunchMode.externalApplication}) async => await launchURL(
-//       "https://youtube.com/c/$username",
-//       mode: mode,
-//     );
+void launchYouTube(final String username, {LaunchMode mode = LaunchMode.externalApplication}) async => await launchURL(
+      "https://youtube.com/c/$username",
+      mode: mode,
+    );
 
 void call(final String phone) async => await launchURL("tel:$phone");
 
