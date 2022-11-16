@@ -27,7 +27,7 @@ dependencies:
   just_audio: ^0.9.27
   #syncfusion_flutter_pdfviewer: ^20.2.48-beta
   path_provider: ^2.0.11
-  flutter_local_notifications: ^9.7.0
+  # flutter_local_notifications: ^9.7.0
   flutter_easyloading: ^3.0.5
   hashtagable: ^2.1.0
   pin_code_fields: ^7.4.0
