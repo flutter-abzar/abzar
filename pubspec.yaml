@@ -15,7 +15,7 @@ dependencies:
   package_info_plus: ^1.4.2
   share_plus: ^4.0.10
   file_picker: ^5.0.1
-  intl: ^0.18.1
+  intl: ^0.18.0
   get_storage: ^2.0.3
   flutter_svg: ^1.1.5
   persian_tools: ^1.0.1
