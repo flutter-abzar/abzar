@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:abzar/abzar.dart';
 
 export 'dart:async';
-export 'dart:convert';
 
 export 'package:collection/collection.dart';
 export 'package:file_picker/file_picker.dart';
@@ -23,7 +22,6 @@ export 'package:share_plus/share_plus.dart';
 export 'package:url_launcher/url_launcher.dart';
 export 'package:video_player/video_player.dart';
 
-export 'package:collection/collection.dart';
 export 'components/components.dart';
 export 'utils/utils.dart';
 export 'package:permission_handler/permission_handler.dart';

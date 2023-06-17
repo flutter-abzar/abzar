@@ -4,7 +4,7 @@ version: 1.2.5
 homepage: https://github.com/flutter-abzar/abzar
 
 environment:
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: '>=2.18.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
@@ -22,10 +22,10 @@ dependencies:
   group_button: ^5.2.2
   logger: ^1.1.0
   image_cropper: ^4.0.1
-  cached_network_image: ^3.2.1
+  cached_network_image: ^3.2.3
   video_player: ^2.4.2
   just_audio: ^0.9.27
-  #syncfusion_flutter_pdfviewer: ^20.2.48-beta
+  # syncfusion_flutter_pdfviewer: ^20.2.48-beta
   path_provider: ^2.0.11
   flutter_local_notifications: ^14.1.1
   flutter_easyloading: ^3.0.5
