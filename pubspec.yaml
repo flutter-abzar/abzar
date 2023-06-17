@@ -35,7 +35,7 @@ dependencies:
   collection: ^1.16.0
   path_drawing: ^1.0.0
   permission_handler: ^10.3.0
-  gallery_saver: ^2.3.2
+  # gallery_saver: ^2.3.2
 
 dev_dependencies:
   flutter_test:
