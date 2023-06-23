@@ -56,11 +56,11 @@ Future<void> push(
   final bool preventDuplicates = true,
   final int milliSecondDelay = 1,
 }) async {
-  final Widget _page = await Future.microtask(() => page);
+  final Widget page0 = await Future.microtask(() => page);
   delay(
     milliSecondDelay,
     () => Get.to(()=>
-      _page,
+      page0,
       fullscreenDialog: dialog,
       popGesture: true,
       opaque: dialog ? false : true,
@@ -75,9 +75,9 @@ Future<void> dialog(
   final bool dialog = false,
   final VoidCallback? onDismiss,
 }) async {
-  final Widget _page = await Future.microtask(() => page);
+  final Widget page0 = await Future.microtask(() => page);
 
-  Get.dialog(_page, useSafeArea: true).then(
+  Get.dialog(page0, useSafeArea: true).then(
     (final _) => onDismiss != null ? onDismiss() : null,
   );
 }
@@ -88,11 +88,11 @@ Future<void> offAll(
   final Transition transition = Transition.cupertino,
   final int milliSecondDelay = 1,
 }) async {
-  final Widget _page = await Future.microtask(() => page);
+  final Widget page0 = await Future.microtask(() => page);
   delay(
     milliSecondDelay,
     () => Get.offAll(
-      _page,
+      page0,
       fullscreenDialog: dialog,
       popGesture: true,
       opaque: dialog ? false : true,

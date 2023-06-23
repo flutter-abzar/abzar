@@ -15,9 +15,9 @@ void showFilePicker({
   if (result != null) {
     if (allowMultiple) {
       final List<File> files = <File>[];
-      result.files.forEach((final PlatformFile i) {
+      for (var i in result.files) {
         if (i.path != null) files.add(File(i.path!));
-      });
+      }
     } else {
       final File file = File(result.files.single.path!);
       action(<File>[file]);

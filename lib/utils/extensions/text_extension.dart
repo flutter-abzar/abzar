@@ -1,7 +1,6 @@
 import 'dart:ui';
 import 'package:abzar/abzar.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_utils/src/extensions/context_extensions.dart';
 
 extension TextExtension on Text {
   Text headline1({

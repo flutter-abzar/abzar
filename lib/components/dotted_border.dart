@@ -18,7 +18,7 @@ class DottedBorder extends StatelessWidget {
   final StrokeCap strokeCap;
   final PathBuilder? customPath;
 
-  DottedBorder({
+  DottedBorder({super.key, 
     required this.child,
     this.color = Colors.black,
     this.strokeWidth = 1,
@@ -61,15 +61,16 @@ class DottedBorder extends StatelessWidget {
   /// * Cannot be null or empty
   /// * If [dashPattern] has only 1 element, it cannot be 0
   bool _isValidDashPattern(List<double>? dashPattern) {
-    Set<double>? _dashSet = dashPattern?.toSet();
-    if (_dashSet == null) return false;
-    if (_dashSet.length == 1 && _dashSet.elementAt(0) == 0.0) return false;
-    if (_dashSet.length == 0) return false;
+    Set<double>? dashSet = dashPattern?.toSet();
+    if (dashSet == null) return false;
+    if (dashSet.length == 1 && dashSet.elementAt(0) == 0.0) return false;
+    if (dashSet.isEmpty) return false;
     return true;
   }
 }
 
 /// The different supported BorderTypes
+// ignore: constant_identifier_names
 enum BorderType { Circle, RRect, Rect, Oval }
 
 typedef PathBuilder = Path Function(Size);
@@ -103,17 +104,17 @@ class _DashPainter extends CustomPainter {
       ..strokeCap = strokeCap
       ..style = PaintingStyle.stroke;
 
-    Path _path;
+    Path path;
     if (customPath != null) {
-      _path = dashPath(
+      path = dashPath(
         customPath!(size),
         dashArray: CircularIntervalList(dashPattern),
       );
     } else {
-      _path = _getPath(size);
+      path = _getPath(size);
     }
 
-    canvas.drawPath(_path, paint);
+    canvas.drawPath(path, paint);
   }
 
   /// Returns a [Path] based on the the [borderType] parameter
@@ -201,6 +202,6 @@ class _DashPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(_DashPainter oldDelegate) {
-    return oldDelegate.strokeWidth != this.strokeWidth || oldDelegate.color != this.color || oldDelegate.dashPattern != this.dashPattern || oldDelegate.borderType != this.borderType;
+    return oldDelegate.strokeWidth != strokeWidth || oldDelegate.color != color || oldDelegate.dashPattern != dashPattern || oldDelegate.borderType != borderType;
   }
 }

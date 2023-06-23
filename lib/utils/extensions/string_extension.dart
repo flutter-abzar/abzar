@@ -25,7 +25,7 @@ extension StringExtensions on String {
     try {
       final Duration difference = DateTime.now().difference(DateFormat("yyyy-MM-ddThh:mm:sss").parse(this));
       if (difference.inDays > 8) {
-        return this.substring(0, 10);
+        return substring(0, 10);
       } else if ((difference.inDays / 7).floor() >= 1) {
         return persian
             ? numericDates

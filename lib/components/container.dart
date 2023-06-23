@@ -138,7 +138,7 @@ class TabBarViewModel {
   final Tab tab;
   final Widget view;
 
-  TabBarViewModel({required final this.tab, required final this.view});
+  TabBarViewModel({required this.tab, required this.view});
 }
 
 Widget defaultTabBar({

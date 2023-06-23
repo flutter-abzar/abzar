@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -231,7 +233,7 @@ class _CircularPercentIndicatorState extends State<CircularPercentIndicator> wit
       items.add(widget.header!);
     }
     items.add(
-      Container(
+      SizedBox(
         height: _diameter,
         width: _diameter,
         child: Stack(
@@ -254,7 +256,7 @@ class _CircularPercentIndicatorState extends State<CircularPercentIndicator> wit
                 maskFilter: widget.maskFilter,
                 rotateLinearGradient: widget.rotateLinearGradient,
               ),
-              child: (widget.center != null) ? Center(child: widget.center) : SizedBox.expand(),
+              child: (widget.center != null) ? Center(child: widget.center) : const SizedBox.expand(),
             ),
             if (widget.widgetIndicator != null && widget.animation)
               Positioned.fill(
@@ -283,12 +285,10 @@ class _CircularPercentIndicatorState extends State<CircularPercentIndicator> wit
 
     return Material(
       color: widget.fillColor,
-      child: Container(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: items,
-        ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: items,
       ),
     );
   }
@@ -305,7 +305,7 @@ class _CircularPercentIndicatorState extends State<CircularPercentIndicator> wit
       }
       return radians(angle + margin * fixedPercent).toDouble();
     } else {
-      final angle = 360;
+      const angle = 360;
       return radians((widget.reverse ? -angle : angle) * _percent).toDouble();
     }
   }
@@ -590,10 +590,10 @@ class LinearPercentIndicator extends StatefulWidget {
     if (linearGradientBackgroundColor != null && backgroundColor != null) {
       throw ArgumentError('Cannot provide both linearGradientBackgroundColor and backgroundColor');
     }
-    _backgroundColor = backgroundColor ?? Color(0xFFB8C7CB);
+    _backgroundColor = backgroundColor ?? const Color(0xFFB8C7CB);
 
     if (percent < 0.0 || percent > 1.0) {
-      throw new Exception("Percent value must be a double between 0.0 and 1.0, but it's $percent");
+      throw Exception("Percent value must be a double between 0.0 and 1.0, but it's $percent");
     }
   }
 
@@ -763,8 +763,8 @@ class _LinearPercentIndicatorState extends State<LinearPercentIndicator> with Si
 }
 
 class _LinearPainter extends CustomPainter {
-  final Paint _paintBackground = new Paint();
-  final Paint _paintLine = new Paint();
+  final Paint _paintBackground = Paint();
+  final Paint _paintLine = Paint();
   final double progress;
   final bool isRTL;
   final Color progressColor;

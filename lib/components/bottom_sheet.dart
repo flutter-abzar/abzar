@@ -15,7 +15,7 @@ class CancelAction {
   /// The TextStyle to use for the title text. (optional)
   final TextStyle? textStyle;
 
-  CancelAction({required final this.title, final this.onPressed, final this.textStyle});
+  CancelAction({required this.title, this.onPressed, this.textStyle});
 }
 
 /// The Actions model that will use on the ActionSheet.
@@ -29,7 +29,7 @@ class BottomSheetAction {
   /// The TextStyle to use for the title text. (optional)
   final TextStyle? textStyle;
 
-  BottomSheetAction({required final this.title, required final this.onPressed, final this.textStyle});
+  BottomSheetAction({required this.title, required this.onPressed, this.textStyle});
 }
 
 /// A action bottom sheet that adapts to the platform (Android/iOS).

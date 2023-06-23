@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
@@ -17,9 +19,9 @@ Widget image(
   final VoidCallback? onTap,
 }) {
   if (source.length <= 10) {
-    if (placeholder == null)
+    if (placeholder == null) {
       return SizedBox(width: width, height: height);
-    else
+    } else {
       return imageAsset(
         placeholder,
         width: width,
@@ -31,8 +33,9 @@ Widget image(
         fit: fit,
         clipBehavior: clipBehavior,
       );
+    }
   } else {
-    if (source.contains("http://") || source.contains("https://"))
+    if (source.contains("http://") || source.contains("https://")) {
       return imageNetwork(
         source,
         width: width,
@@ -45,7 +48,7 @@ Widget image(
         onTap: onTap,
         placeholder: placeholder,
       );
-    else
+    } else {
       return imageAsset(
         source,
         width: width,
@@ -57,6 +60,7 @@ Widget image(
         color: color,
         onTap: onTap,
       );
+    }
   }
 }
 

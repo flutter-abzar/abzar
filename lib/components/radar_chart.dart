@@ -95,7 +95,7 @@ class _RadarChartState extends State<RadarChart> with SingleTickerProviderStateM
   Widget build(BuildContext context) {
     return CustomPaint(
       size: const Size(double.infinity, double.infinity),
-      painter: RadarChartPainter(widget.ticks, widget.features, widget.data, widget.reverseAxis, widget.ticksTextStyle, widget.featuresTextStyle, widget.outlineColor, widget.axisColor, widget.graphColors, widget.sides, this.fraction),
+      painter: RadarChartPainter(widget.ticks, widget.features, widget.data, widget.reverseAxis, widget.ticksTextStyle, widget.featuresTextStyle, widget.outlineColor, widget.axisColor, widget.graphColors, widget.sides, fraction),
     );
   }
 
@@ -182,7 +182,7 @@ class RadarChartPainter extends CustomPainter {
       ..strokeWidth = 1.0
       ..isAntiAlias = true;
 
-    canvas.drawPath(variablePath(size, radius, this.sides), outlinePaint);
+    canvas.drawPath(variablePath(size, radius, sides), outlinePaint);
     // Painting the circles and labels for the given ticks (could be auto-generated)
     // The last tick is ignored, since it overlaps with the feature label
     var tickDistance = radius / (ticks.length);
@@ -200,7 +200,7 @@ class RadarChartPainter extends CustomPainter {
     tickLabels.sublist(reverseAxis ? 1 : 0, reverseAxis ? ticks.length : ticks.length - 1).asMap().forEach((index, tick) {
       var tickRadius = tickDistance * (index + 1);
 
-      canvas.drawPath(variablePath(size, tickRadius, this.sides), ticksPaint);
+      canvas.drawPath(variablePath(size, tickRadius, sides), ticksPaint);
 
       TextPainter(
         text: TextSpan(text: tick.toString(), style: ticksTextStyle),

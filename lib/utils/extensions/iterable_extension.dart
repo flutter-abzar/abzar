@@ -1,5 +1,5 @@
 extension GenericIterableExtentions<T> on Iterable {
-  Iterable<E> mapIndexed<E, T>(E Function(int index, T item) f) sync* {
+  Iterable<E> mapIndexed<E>(E Function(int index, T item) f) sync* {
     int index = 0;
     for (final T item in this) {
       yield f(index, item);
