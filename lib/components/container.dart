@@ -6,6 +6,7 @@ Widget scaffold({
   final Key? key,
   final PreferredSizeWidget? appBar,
   final Widget? drawer,
+  final Widget? endDrawer,
   final Widget? floatingActionButton,
   final Widget? bottomNavigationBar,
   final EdgeInsets? padding,
@@ -23,6 +24,7 @@ Widget scaffold({
         key: key,
         backgroundColor: color,
         appBar: appBar,
+        endDrawer: endDrawer,
         drawer: drawer,
         extendBodyBehindAppBar: extendBodyBehindAppBar,
         resizeToAvoidBottomInset: resizeToAvoidBottomInset,
@@ -111,9 +113,9 @@ Widget row({
       margin: margin,
       child: isScrollable
           ? SingleChildScrollView(
-            physics: physics ?? const BouncingScrollPhysics(),
-            scrollDirection: Axis.horizontal,
-            controller: scrollController,
+              physics: physics ?? const BouncingScrollPhysics(),
+              scrollDirection: Axis.horizontal,
+              controller: scrollController,
               child: Row(
                 mainAxisAlignment: mainAxisAlignment,
                 mainAxisSize: mainAxisSize,
