@@ -10,7 +10,6 @@ export 'package:flutter_svg/flutter_svg.dart';
 export 'package:get/get.dart';
 export 'package:get_storage/get_storage.dart';
 export 'package:group_button/group_button.dart';
-export 'package:hashtagable/hashtagable.dart';
 export 'package:image_cropper/image_cropper.dart';
 export 'package:intl/intl.dart';
 export 'package:just_audio/just_audio.dart';

@@ -29,7 +29,7 @@ dependencies:
   path_provider: ^2.0.11
   flutter_local_notifications: ^14.1.1
   flutter_easyloading: ^3.0.5
-  hashtagable: ^2.1.0
+  # hashtagable: ^2.1.0
   pin_code_fields: ^7.4.0
   intl_phone_number_input: ^0.7.0+2
   collection: ^1.16.0
