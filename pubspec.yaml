@@ -16,18 +16,18 @@ dependencies:
   share_plus: ^7.0.2
   file_picker: ^5.0.1
   intl: ^0.18.1
-  get_storage: ^2.0.3
+  # get_storage: ^2.0.3
   flutter_svg: ^2.0.5
   persian_tools: ^1.0.1
-  group_button: ^5.2.2
+  # group_button: ^5.2.2
   logger: ^1.1.0
   image_cropper: ^4.0.1
   cached_network_image: ^3.2.3
   video_player: ^2.6.0
   just_audio: ^0.9.27
   # syncfusion_flutter_pdfviewer: ^20.2.48-beta
-  path_provider: ^2.0.11
-  flutter_local_notifications: ^14.1.1
+  # path_provider: ^2.0.11
+  # flutter_local_notifications: ^14.1.1
   flutter_easyloading: ^3.0.5
   # hashtagable: ^2.1.0
   pin_code_fields: ^7.4.0
